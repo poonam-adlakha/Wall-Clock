@@ -1,0 +1,120 @@
+body {
+  background: radial-gradient(
+    ellipse at center,
+    rgb(165, 166, 212) 0%,
+    rgb(235, 171, 171) 100%
+  );
+}
+.container {
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.Clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle at center,
+    rgb(8, 8, 0),
+    rgba(12, 6, 6, 0.795)
+  );
+  transform-origin: left bottom;
+  border-radius: 145px;
+  border: white solid 2px;
+}
+#hour {
+  position: absolute;
+  width: 1%;
+  height: 25%;
+  top: 25%;
+  left: 50%;
+  transform-origin: bottom;
+  background-color: aliceblue;
+}
+#minute {
+  position: absolute;
+  width: 1%;
+  height: 30%;
+  top: 20%;
+  left: 50%;
+  transform-origin: bottom;
+  background-color: aliceblue;
+  z-index: 0.4;
+}
+#second {
+  position: absolute;
+  width: 1%;
+  height: 35%;
+  top: 15%;
+  left: 50%;
+  background-color: red;
+  transform-origin: bottom;
+  z-index: 0.5;
+}
+
+.Clock .block {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(165, 178, 190);
+  transform: translateX(147px) translateY(144px);
+  z-index: 1;
+}
+
+.Clock .numbers {
+  --angle: 0;
+  position: absolute;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: rgb(250, 249, 245);
+  transform: rotate(var(--angle));
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.Clock .one {
+  --angle: 30deg;
+}
+.Clock .two {
+  --angle: 60deg;
+}
+.Clock .three {
+  --angle: 90deg;
+}
+.Clock .four {
+  --angle: 120deg;
+}
+.Clock .five {
+  --angle: 150deg;
+}
+.Clock .six {
+  --angle: 0deg;
+  transform: translateY(272px);
+}
+.Clock .seven {
+  --angle: 210deg;
+}
+.Clock .eight {
+  --angle: 240deg;
+}
+.Clock .nine {
+  --angle: 270deg;
+}
+.Clock .ten {
+  --angle: 300deg;
+}
+.Clock .eleven {
+  --angle: 330deg;
+}
+#copyright {
+  font-size: 10px;
+  color: rgb(235, 222, 207);
+  transform: translateY(-290px) translateX(135px);
+}
