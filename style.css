@@ -27,23 +27,20 @@ body {
   border-radius: 145px;
   border: white solid 2px;
 }
-#hour {
+#hour, #minute {
   position: absolute;
   width: 1%;
-  height: 25%;
-  top: 25%;
-  left: 50%;
+  height: 23%;
+  top: 23.5%;
+  left: 49%;
   transform-origin: bottom;
   background-color: aliceblue;
+  border-top: solid 10px red;
 }
 #minute {
-  position: absolute;
-  width: 1%;
   height: 30%;
-  top: 20%;
+  top: 15.7%;
   left: 50%;
-  transform-origin: bottom;
-  background-color: aliceblue;
   z-index: 0.4;
 }
 #second {
