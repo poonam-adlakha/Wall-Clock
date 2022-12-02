@@ -1,4 +1,4 @@
-# Wall-Clock
+# Wall-Clock-Analog
 
 Working Analog Clock 
 
